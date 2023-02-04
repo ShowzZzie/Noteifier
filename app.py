@@ -224,7 +224,3 @@ def edit_reminder_f():
     reminder.reminder_datetime = reminder_datetime_formatted
     db.session.commit()
     return redirect('/reminders')
-
-
-if __name__ == '__main__':
-    app.run(host='192.168.0.145', port='5000')
