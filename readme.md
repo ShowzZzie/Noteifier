@@ -27,4 +27,4 @@ This is a web application built with Flask and SQLAlchemy for users to manage th
  - HTML/CSS
 
 ### How to run
-You can either use the code on your own or by accessing this website: 
+You can either use the code on your own or by accessing this website: https://noteifier.onrender.com/
