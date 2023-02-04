@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}Add Note{% endblock %}
+
+{% block main %}
+    <form action="/add_note_f" method="POST">
+        <div>
+            Title:<input autocomplete="off" id="title" name="title" class="form-control" required>
+        </div>
+        <br>
+        <div>
+            Content:<textarea autocomplete="off" id="content" name="content" class="form-control bigger" required></textarea>
+        </div>
+        <br>
+        <div>
+            <input type="radio" name="priority" value='3' required>High
+            <input type="radio" name="priority" value="2" required>Medium
+            <input type="radio" name="priority" value="1" required>Low
+        </div>
+        <div class="submit-container">
+            <button type="submit" class='add-button-mid' id="addnote" name="addnote" value="addnote">Add</button>
+        </div>
+    </form>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}Edit Note{% endblock %}
+
+{% block main %}
+    <form action="/edit_note_f" method="POST">
+        <input type="hidden" name="note_id" value="{{ note.id }}">
+        <div>
+            Title:<input autocomplete="off" value="{{ note.title }}" id="title" name="title" class="form-control" required>
+        </div>
+        <br>
+        <div>
+            Content:<textarea autocomplete="off" id="content" name="content" class="form-control bigger" required>{{ note.content }}</textarea>
+        </div>
+        <br>
+        <div>
+            <input type="radio" name="priority" value='3' {% if note.priority|int == 3 %}checked{% endif %} required>High
+            <input type="radio" name="priority" value="2" {% if note.priority|int == 2 %}checked{% endif %} required>Medium
+            <input type="radio" name="priority" value="1" {% if note.priority|int == 1 %}checked{% endif %} required>Low
+        </div>
+        <div class="submit-container">
+            <button type="submit" class='add-button-mid' id="editnote" name="editnote" value="editnote">Add</button>
+        </div>
+    </form>
+{% endblock %}

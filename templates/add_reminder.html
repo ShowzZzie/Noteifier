@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block title %}Add Reminder{% endblock %}
+
+{% block main %}
+    <form action="/add_reminder_f" method="POST">
+        <div>
+            Title:<input autocomplete="off" id="title" name="title" class="form-control" required>
+        </div><br>
+        <div>
+            Content:<input autocomplete="off" id="content" name="content" class="form-control">
+        </div><br>
+        <div>
+            Date & Time: <input type="datetime-local" id="reminder_datetime" name="reminder_datetime" required>
+        </div><br>
+        <div class="submit-container">
+            <button type="submit" id="addreminder" name="addreminder" value="addreminder" class="add-button-mid">Add</button>
+        </div>
+    </form>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block title %}Login{% endblock %}
+
+{% block main %}
+    {% for msg in get_flashed_messages() %}
+        <h2 class="flashy">{{ msg }}</h2>
+    {% endfor %}
+    <span class="idk2"><h1>LOGIN</h1></span><br>
+    <div><br>
+    <form action="{{url_for('login')}}" method="post"><br><br>
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+        <div class="idk"><a href="/register" id="createacc">Create Account</a></div><br><br/>
+        <div class="idk"><input type="submit" id="logregbtn" value="Log In"></div><br>
+    </form><br><br>
+    </div><br>
+{% endblock %}

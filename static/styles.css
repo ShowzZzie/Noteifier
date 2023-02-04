@@ -1,0 +1,388 @@
+/* Dark theme styles */
+.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Header styles */
+header {
+    background-color: #444;
+    padding: 10px;
+}
+
+nav {
+    text-align: center
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+/* Main section styles */
+main {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+}
+
+.center-aligned-buttons button {
+    width: 150px;
+    height: 150px;
+    background-color: #555;
+    color: #fff;
+    font-size: 24px;
+    border: none;
+    margin: 10px;
+}
+
+.center-aligned-buttons button:hover {
+    background-color: #777;
+    color: #eee;
+    cursor: pointer;
+}
+
+.edit-button {
+    background-color: blue;
+    color: white;
+    width: 75px;
+}
+
+.edit-button:hover {
+    background-color: darkblue;
+}
+
+.add-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    transition: background-color 0.2s;
+}
+
+.add-button:hover {
+    background-color: darkgreen;
+    cursor: pointer;
+}
+
+.add-button-mid {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    transition: background-color 0.2s;
+}
+
+.add-button-mid:hover {
+    background-color: darkgreen;
+    cursor: pointer;
+}
+
+.submit-container {
+    display: flex;
+    align-items: center;
+    height: 100px;
+  }
+
+.form-control {
+    width: 400px !important;
+}
+
+.bigger {
+    height: 175px;
+    width: 400px;
+}
+
+input[type="datetime-local"] {
+    width: 250px;
+    height: 40px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.notes-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.delete-button {
+    background-color: red;
+    color: white;
+    width: 75px;
+}
+
+.delete-button:hover {
+    background-color: darkred;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+footer p {
+    color: #fff;
+    font-size: 12px;
+}
+
+.navclicks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:monospace;
+    font-size: 25px;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    font-weight:bold !important;
+}
+
+#toright {
+    position: relative;
+    margin-right: -15px;
+}
+
+#testing {
+    white-space: nowrap;
+    position: absolute;
+    margin-left: 86% !important;
+    display: inline-block;
+}
+
+#mainlogo {
+    position: absolute;
+    left: 2%;
+    top: 2.5%;
+    max-width: 192px;
+    max-height: 35px;
+}
+
+
+@media screen and (max-width:768px) {
+    .navclicks {
+      justify-content: flex-start;
+      font-size: 19px;
+    }
+
+    #testing {
+      position: static;
+      margin-left: 10px !important;
+      font-size: 19px;
+    }
+    #testing img {
+        width:20px;
+        height:20px;
+    }
+}
+
+  @media screen and (max-width:950px) {
+    .navclicks {
+      justify-content: flex-start;
+      font-size: 19px;
+      margin-right: 500px;
+    }
+
+    #testing {
+      position: static;
+      margin-left: 400px !important;
+      font-size: 22px;
+        }
+    #testing img {
+        width:20px;
+        height:20px;
+    } 
+}
+
+  @media screen and (max-width:400px) {
+    .navclicks {
+      justify-content: flex-start;
+      font-size: 15px;
+    }
+
+    #testing {
+      position: static;
+      margin-left: 10px !important;
+      font-size: 15px;
+    }
+  }
+
+  @media screen and (max-width:450px) {
+    .navclicks {
+      justify-content: flex-start;
+      font-size: 17px;
+      width: 110%;
+    }
+
+    #testing {
+      position: static;
+      margin-left: 50px !important;
+      font-size: 15px;
+    }
+    #testing img {
+        width:20px;
+        height:20px;
+        margin-left: -70px;
+    } 
+}
+
+
+
+
+#testing img {
+    margin-right: 5px;
+}
+
+ul li{
+    list-style: none;
+    width: 120px;
+    text-transform: uppercase;
+    height: 40px;
+    line-height: 50px;
+    text-align: center;
+}
+
+ul {
+    margin:0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+.navclicks li:last-child {
+    margin-left: 20px;
+}
+
+
+.flashes {
+    padding: 10px;
+    background-color: #f44336;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.idk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    left: 0 !important;
+    right: auto !important; 
+}
+
+.idk2 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    margin-top: -450px;
+}
+
+h1 {
+    font-family:monospace;
+    font-weight: bold !important;
+}
+
+.flashy {
+    position: absolute;
+    text-align: center;
+    margin-top: -335px;
+    font-size: 20px;
+    border: 2px solid red;
+    border-color: red;
+    padding: 10px;
+    background-color: #C30006;
+    border-radius: 15px;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 240px;
+    background-color: white;
+    color: black;
+    text-align:unset !important;
+    border-radius: 15px;
+    padding: 5px 0;
+    position: absolute;
+    margin-right: -500px;
+    z-index: 1;
+    transition: all 0.5s ease-in-out;
+    transform: translateY(-10px);
+    opacity: 0;
+}
+
+.idk input:focus + .tooltiptext {
+    visibility: visible;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 36%;
+    left: -35%;
+    margin-left: 35px;
+    border-width: 25px;
+    border-style: solid;
+    border-color: transparent white transparent transparent;
+}
+
+.tooltiptext li {
+    list-style:disc;
+    width: 240px;
+    height: 28px;
+    line-height: 40px;
+    text-transform: none !important;
+    margin-left: 15px !important;
+    text-align: left !important;
+}
+
+#logregbtn {
+    background-color: #00A3FF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#logregbtn:hover {
+    background-color: #0082CB;
+}
+
+#createacc {
+    color:lightblue;
+}
+
+#createacc:hover {
+    color: skyblue
+}

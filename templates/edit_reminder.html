@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}Edit Reminder{% endblock %}
+
+{% block main %}
+    <form action="/edit_reminder_f" method="POST">
+        <input type="hidden" name="reminder_id" value="{{ reminder.id }}">
+        <div>
+            Title:<input autocomplete="off" id="title" value="{{ reminder.title }}" name="title" class="form-control" required>
+        </div><br>
+        <div>
+            Content:<input autocomplete="off" id="content" value="{{ reminder.content }}" name="content" class="form-control">
+        </div><br>
+        <div>
+            Date & Time:  <input type="datetime-local" id="reminder_datetime" value="{{ reminder.dtobj }}" name="reminder_datetime" required>
+        </div><br>
+        <div class="submit-container">
+            <button type="submit" id="editreminder" name="editreminder" value="editreminder" class="add-button-mid">Add</button>
+        </div>
+    </form>
+{% endblock %}

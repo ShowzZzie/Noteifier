@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}Register{% endblock %}
+
+{% block main %}
+    {% for msg in get_flashed_messages() %}
+        <h2 class="flashy">{{ msg }}</h2>
+    {% endfor %}
+    <span class='idk2'><h1>Create an Account</h1></span><br>
+    <div>
+        <form action="{{url_for('register')}}" method="post"><br><br>
+            <label for="username">Username: </label><br>
+            <input type="text" id="username" name="username" required><br><br>
+            <label for="password">Password: </label><br>
+            <div class='idk'>
+                <input type="password" id="password" name="password" required>
+                <span class="tooltiptext"><b>Password Requirements:</b><br>
+                    <ul>
+                        <li>At least 8 characters</li>
+                        <li>At least one capital letter</li>
+                        <li>At least one digit</li>
+                    </ul>
+                </span>
+            </div><br>
+            <label for="password_repeat">Repeat Password: </label><br>
+            <div class="idk"><input type='password' id="password_repeat" name="password_repeat" required></div><br><br>
+            <div class='idk'><input type="submit" id='logregbtn' value="Register"></div><br>
+        </form>
+    </div>
+{% endblock %}
